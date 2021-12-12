@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Addressing View_Layers":"/aclk_0_1:false|/resetn_0_1:false|",
+   "Addressing View_ScaleFactor":"1.25",
+   "Addressing View_TopLeft":"-656,-290",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-223,-74",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"1.18871",
+   "Grouping and No Loops_TopLeft":"-241,0",
+   "Interfaces View_Layers":"/aclk_0_1:false|/resetn_0_1:false|",
+   "Interfaces View_ScaleFactor":"1.25",
+   "Interfaces View_TopLeft":"-313,-224",
+   "No Loops_Layers":"/aclk_0_1:true|/resetn_0_1:true|",
+   "No Loops_ScaleFactor":"1.18871",
+   "No Loops_TopLeft":"-241,0",
+   "Reduced Jogs_Layers":"/aclk_0_1:true|/resetn_0_1:true|",
+   "Reduced Jogs_ScaleFactor":"1.24915",
+   "Reduced Jogs_TopLeft":"-194,0",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -30 -y 230 -defaultsOSRD
+preplace port m_axis_data_tvalid -pg 1 -lvl 4 -x 990 -y 150 -defaultsOSRD
+preplace port resetn -pg 1 -lvl 0 -x -30 -y 20 -defaultsOSRD
+preplace port s_axis_data_tlast -pg 1 -lvl 0 -x -30 -y 50 -defaultsOSRD
+preplace portBus m_axis_data_tdata -pg 1 -lvl 4 -x 990 -y 120 -defaultsOSRD
+preplace inst FFT -pg 1 -lvl 2 -x 510 -y 310 -defaultsOSRD
+preplace inst DataSrc -pg 1 -lvl 1 -x 130 -y 240 -defaultsOSRD
+preplace inst FFT_CONFIG -pg 1 -lvl 1 -x 130 -y 390 -defaultsOSRD
+preplace inst DataWrite -pg 1 -lvl 3 -x 860 -y 250 -defaultsOSRD
+preplace inst DIGITAL_HIGH -pg 1 -lvl 1 -x 130 -y 110 -defaultsOSRD
+preplace netloc aclk_0_1 1 0 3 0 40 290 150 720
+preplace netloc datasrc_0_tvalid 1 1 1 270 250n
+preplace netloc xfft_0_s_axis_data_tready 1 1 1 260 270n
+preplace netloc datasrc_0_tdata 1 1 1 300 230n
+preplace netloc xlconstant_1_dout 1 1 2 280J 140 710
+preplace netloc xfft_0_m_axis_data_tdata 1 2 2 730 120 N
+preplace netloc xfft_0_m_axis_data_tvalid 1 2 2 750 150 N
+preplace netloc resetn_0_1 1 0 1 -10J 20n
+preplace netloc s_axis_data_tlast_0_1 1 0 2 NJ 50 310J
+preplace netloc xlconstant_0_dout 1 1 1 310J 340n
+preplace netloc xfft_0_m_axis_data_tlast 1 2 1 740J 230n
+levelinfo -pg 1 -30 130 510 860 990
+pagesize -pg 1 -db -bbox -sgen -190 0 1190 470
+"
+}
+0

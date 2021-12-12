@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/ip/design_1_DIGITAL_LOW_0/sim/design_1_DIGITAL_LOW_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_DIGITAL_LOW_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_2/sim/design_1_blk_mem_gen_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/ip/design_1_DIGITAL_LOW_1/sim/design_1_DIGITAL_LOW_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_DIGITAL_LOW_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/ip/design_1_Controller_0_0/sim/design_1_Controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/FFT_Hamming_Window/FFT_Hamming_Window.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper

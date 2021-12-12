@@ -1,0 +1,418 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC8946E7F62DE08D5",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../FFT_Hamming_Window.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Data": "",
+      "DIGITAL_LOW": "",
+      "DIGITAL_HIGH": "",
+      "Hamming_Coefficients": "",
+      "FFT": "",
+      "FFT_CONFIG": "",
+      "Controller": ""
+    },
+    "ports": {
+      "aclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clka",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "m_axis_data_tlast": {
+        "direction": "O"
+      },
+      "m_axis_data_tdata": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "m_axis_data_tvalid": {
+        "direction": "O"
+      },
+      "nreset": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Data": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "design_1_blk_mem_gen_0_1",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_1\\design_1_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "Data",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../ExternalFiles/data.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "READ_FIRST"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "12520"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "DIGITAL_LOW": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip\\design_1_xlconstant_0_0\\design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "DIGITAL_LOW",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "DIGITAL_HIGH": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_DIGITAL_LOW_0",
+        "xci_path": "ip\\design_1_DIGITAL_LOW_0\\design_1_DIGITAL_LOW_0.xci",
+        "inst_hier_path": "DIGITAL_HIGH",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1"
+          }
+        }
+      },
+      "Hamming_Coefficients": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "design_1_blk_mem_gen_0_2",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_2\\design_1_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "Hamming_Coefficients",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../ExternalFiles/hamming.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "READ_FIRST"
+          },
+          "Read_Width_A": {
+            "value": "16"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "40"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "FFT": {
+        "vlnv": "xilinx.com:ip:xfft:9.1",
+        "xci_name": "design_1_xfft_0_0",
+        "xci_path": "ip\\design_1_xfft_0_0\\design_1_xfft_0_0.xci",
+        "inst_hier_path": "FFT",
+        "parameters": {
+          "implementation_options": {
+            "value": "pipelined_streaming_io"
+          },
+          "number_of_stages_using_block_ram_for_data_and_phase_factors": {
+            "value": "0"
+          },
+          "output_ordering": {
+            "value": "natural_order"
+          },
+          "transform_length": {
+            "value": "32"
+          }
+        }
+      },
+      "FFT_CONFIG": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_DIGITAL_LOW_1",
+        "xci_path": "ip\\design_1_DIGITAL_LOW_1\\design_1_DIGITAL_LOW_1.xci",
+        "inst_hier_path": "FFT_CONFIG",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "b00000001"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "Controller": {
+        "vlnv": "xilinx.com:module_ref:Controller:1.0",
+        "xci_name": "design_1_Controller_0_0",
+        "xci_path": "ip\\design_1_Controller_0_0\\design_1_Controller_0_0.xci",
+        "inst_hier_path": "Controller",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Controller",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "s_axis": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "auto"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clka",
+                "value_src": "default_prop"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "s_axis_tdata",
+                "direction": "O",
+                "left": "31",
+                "right": "0"
+              },
+              "TLAST": {
+                "physical_name": "s_axis_tlast",
+                "direction": "O"
+              },
+              "TVALID": {
+                "physical_name": "s_axis_tvalid",
+                "direction": "O"
+              },
+              "TREADY": {
+                "physical_name": "s_axis_tready",
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "ports": {
+          "nreset": {
+            "direction": "I"
+          },
+          "aclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "s_axis",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clka",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "hamming_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "hamming_addr": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_addr": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "xlconstant_0_dout": {
+        "ports": [
+          "DIGITAL_LOW/dout",
+          "Data/wea",
+          "Hamming_Coefficients/wea"
+        ]
+      },
+      "clka_0_1": {
+        "ports": [
+          "aclk",
+          "Data/clka",
+          "Hamming_Coefficients/clka",
+          "FFT/aclk",
+          "Controller/aclk"
+        ]
+      },
+      "DIGITAL_HIGH_dout": {
+        "ports": [
+          "DIGITAL_HIGH/dout",
+          "Data/ena",
+          "Hamming_Coefficients/ena",
+          "FFT/s_axis_config_tvalid",
+          "FFT/m_axis_data_tready"
+        ]
+      },
+      "FFT_CONFIG_dout": {
+        "ports": [
+          "FFT_CONFIG/dout",
+          "FFT/s_axis_config_tdata"
+        ]
+      },
+      "xfft_0_m_axis_data_tlast": {
+        "ports": [
+          "FFT/m_axis_data_tlast",
+          "m_axis_data_tlast"
+        ]
+      },
+      "xfft_0_m_axis_data_tdata": {
+        "ports": [
+          "FFT/m_axis_data_tdata",
+          "m_axis_data_tdata"
+        ]
+      },
+      "xfft_0_m_axis_data_tvalid": {
+        "ports": [
+          "FFT/m_axis_data_tvalid",
+          "m_axis_data_tvalid"
+        ]
+      },
+      "Controller_s_axis_tlast": {
+        "ports": [
+          "Controller/s_axis_tlast",
+          "FFT/s_axis_data_tlast"
+        ]
+      },
+      "Controller_s_axis_tvalid": {
+        "ports": [
+          "Controller/s_axis_tvalid",
+          "FFT/s_axis_data_tvalid"
+        ]
+      },
+      "xfft_0_s_axis_data_tready": {
+        "ports": [
+          "FFT/s_axis_data_tready",
+          "Controller/s_axis_tready"
+        ]
+      },
+      "Controller_hamming_addr": {
+        "ports": [
+          "Controller/hamming_addr",
+          "Hamming_Coefficients/addra"
+        ]
+      },
+      "Controller_data_addr": {
+        "ports": [
+          "Controller/data_addr",
+          "Data/addra"
+        ]
+      },
+      "Data_douta": {
+        "ports": [
+          "Data/douta",
+          "Controller/data"
+        ]
+      },
+      "Hamming_Coefficients_douta": {
+        "ports": [
+          "Hamming_Coefficients/douta",
+          "Controller/hamming_data"
+        ]
+      },
+      "nreset_0_1": {
+        "ports": [
+          "nreset",
+          "Controller/nreset"
+        ]
+      },
+      "Controller_s_axis_tdata": {
+        "ports": [
+          "Controller/s_axis_tdata",
+          "FFT/s_axis_data_tdata"
+        ]
+      }
+    }
+  }
+}

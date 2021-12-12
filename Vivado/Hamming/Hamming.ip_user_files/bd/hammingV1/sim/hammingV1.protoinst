@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"hammingV1": {
+			"proto_instances": {
+			}
+		}
+	}
+}

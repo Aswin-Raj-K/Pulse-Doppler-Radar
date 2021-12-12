@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Hamming.srcs/sources_1/new/addressGenerator.v" \
+"../../../../Hamming.srcs/sources_1/new/fixedPointMultiplier.v" \
+"../../../../Hamming.srcs/sources_1/new/splitter.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_blk_mem_gen_0_0/sim/hammingV1_blk_mem_gen_0_0.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_xlconstant_0_0/sim/hammingV1_xlconstant_0_0.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_BlockMemoryGenerator_0/sim/hammingV1_BlockMemoryGenerator_0.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_addressGenerator_0_0/sim/hammingV1_addressGenerator_0_0.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_fixedPointMultiplier_0_0/sim/hammingV1_fixedPointMultiplier_0_0.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_fixedPointMultiplier_0_1/sim/hammingV1_fixedPointMultiplier_0_1.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_splitter_0_0/sim/hammingV1_splitter_0_0.v" \
+"../../../../Hamming.ip_user_files/bd/hammingV1/sim/hammingV1.v" \
+"../../../../Hamming.gen/sources_1/bd/hammingV1/hdl/hammingV1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

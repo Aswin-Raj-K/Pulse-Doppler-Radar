@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_mult_gen_0_1/sim/hammingV1_mult_gen_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hammingV1_mult_gen_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_m1_0/sim/hammingV1_m1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hammingV1_m1_0'

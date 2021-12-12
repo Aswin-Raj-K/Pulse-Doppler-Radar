@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.srcs/sources_1/new/addressGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addressGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.srcs/sources_1/new/fixedPointMultiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fixedPointMultiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.srcs/sources_1/new/splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_blk_mem_gen_0_0/sim/hammingV1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_xlconstant_0_0/sim/hammingV1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_BlockMemoryGenerator_0/sim/hammingV1_BlockMemoryGenerator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_BlockMemoryGenerator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_addressGenerator_0_0/sim/hammingV1_addressGenerator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_addressGenerator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_fixedPointMultiplier_0_0/sim/hammingV1_fixedPointMultiplier_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_fixedPointMultiplier_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_fixedPointMultiplier_0_1/sim/hammingV1_fixedPointMultiplier_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_fixedPointMultiplier_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/ip/hammingV1_splitter_0_0/sim/hammingV1_splitter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_splitter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.ip_user_files/bd/hammingV1/sim/hammingV1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/Hamming/Hamming.gen/sources_1/bd/hammingV1/hdl/hammingV1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingV1_wrapper
