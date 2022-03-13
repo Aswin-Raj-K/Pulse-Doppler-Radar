@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MatchedFiltering.srcs/sources_1/new/datasrc.v" \
+"../../../../MatchedFiltering.srcs/sources_1/new/splitter.v" \
+"../../../../MatchedFiltering.srcs/sources_1/new/and.v" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_datasrc_0_0/sim/design_1_datasrc_0_0.v" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_splitter_0_0/sim/design_1_splitter_0_0.v" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_AND_0_0/sim/design_1_AND_0_0.v" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../MatchedFiltering.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_fir_compiler_0_0/sim/design_1_fir_compiler_0_0.vhd" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_FIR_IMAG_0/sim/design_1_FIR_IMAG_0.vhd" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_FIR_IMAG1_0/sim/design_1_FIR_IMAG1_0.vhd" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_FIR_REAL1_0/sim/design_1_FIR_REAL1_0.vhd" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_c_addsub_0_0/sim/design_1_c_addsub_0_0.vhd" \
+"../../../../MatchedFiltering.ip_user_files/bd/design_1/ip/design_1_c_addsub_0_1/sim/design_1_c_addsub_0_1.vhd" \
+
+# Do not sort compile order
+nosort
