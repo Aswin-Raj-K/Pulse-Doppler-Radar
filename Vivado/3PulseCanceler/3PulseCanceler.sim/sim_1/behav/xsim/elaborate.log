@@ -1,0 +1,36 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado2020/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 06ff0f697fc340c99bdc0dbb91e94394 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dataWrite
+Compiling module xil_defaultlib.design_1_dataWrite_0_0
+Compiling module xil_defaultlib.datasrc
+Compiling module xil_defaultlib.design_1_datasrc_0_0
+Compiling module xil_defaultlib.top_mat_A_M_real_V_ram
+Compiling module xil_defaultlib.top_mat_A_M_real_V(DataWidth=16,...
+Compiling module xil_defaultlib.top_mat_C_0_ram
+Compiling module xil_defaultlib.top_mat_C_0(DataWidth=16,Address...
+Compiling module xil_defaultlib.top_matmul_coeff_M_real_V_rom
+Compiling module xil_defaultlib.top_matmul_coeff_M_real_V(DataWi...
+Compiling module xil_defaultlib.top_mac_muladd_6ns_7ns_6ns_11_4_...
+Compiling module xil_defaultlib.top_mac_muladd_6ns_7ns_6ns_11_4_...
+Compiling module xil_defaultlib.top_mac_muladd_9ns_7ns_6ns_14_4_...
+Compiling module xil_defaultlib.top_mac_muladd_9ns_7ns_6ns_14_4_...
+Compiling module xil_defaultlib.top_mul_mul_10s_16s_24_4_1_DSP48...
+Compiling module xil_defaultlib.top_mul_mul_10s_16s_24_4_1(ID=1,...
+Compiling module xil_defaultlib.top_matmul
+Compiling module xil_defaultlib.top_regslice_both
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_1_top_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav

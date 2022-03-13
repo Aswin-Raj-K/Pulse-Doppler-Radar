@@ -1,0 +1,41 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.srcs/sources_1/new/datasrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datasrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.srcs/sources_1/new/dataWrite.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataWrite
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_mac_muladd_6ns_7ns_6ns_11_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mac_muladd_6ns_7ns_6ns_11_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module top_mac_muladd_6ns_7ns_6ns_11_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_mac_muladd_9ns_7ns_6ns_14_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mac_muladd_9ns_7ns_6ns_14_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module top_mac_muladd_9ns_7ns_6ns_14_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_mat_A_M_real_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mat_A_M_real_V_ram
+INFO: [VRFC 10-311] analyzing module top_mat_A_M_real_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_mat_C_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mat_C_0_ram
+INFO: [VRFC 10-311] analyzing module top_mat_C_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_matmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_matmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_matmul_coeff_M_real_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_matmul_coeff_M_real_V_rom
+INFO: [VRFC 10-311] analyzing module top_matmul_coeff_M_real_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_mul_mul_10s_16s_24_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_mul_10s_16s_24_4_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module top_mul_mul_10s_16s_24_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_regslice_both
+INFO: [VRFC 10-311] analyzing module top_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/ipshared/1e40/hdl/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.ip_user_files/bd/design_1/ip/design_1_top_0_0/sim/design_1_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.ip_user_files/bd/design_1/ip/design_1_datasrc_0_0/sim/design_1_datasrc_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_datasrc_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.ip_user_files/bd/design_1/ip/design_1_dataWrite_0_0/sim/design_1_dataWrite_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_dataWrite_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Academics/BTP/Vivado/3PulseCanceler/3PulseCanceler.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
