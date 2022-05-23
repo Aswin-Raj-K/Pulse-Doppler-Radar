@@ -1,0 +1,7 @@
+   Build using "D:/Vivado2020/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling radarProcessor.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top.cpp
+   Compiling radarProcessor_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top_util.cpp
+   Compiling apatb_top_ir.ll
+   Generating cosim.tv.exe

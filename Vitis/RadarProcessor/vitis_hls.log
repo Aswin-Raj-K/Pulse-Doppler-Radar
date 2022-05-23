@@ -1,0 +1,53 @@
+INFO: [HLS 200-10] Running 'D:/Vivado2020/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'DELL' on host 'desktop-gk40go9' (Windows NT_amd64 version 6.2) on Sun May 09 00:48:39 +0530 2021
+INFO: [HLS 200-10] In directory 'E:/Academics/BTP/Vitis/RadarProcessor'
+Sourcing Tcl script 'E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project Radar_Processor 
+INFO: [HLS 200-10] Opening project 'E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files ../SourceCodes/radarProcessor.cpp 
+INFO: [HLS 200-10] Adding design file '../SourceCodes/radarProcessor.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../SourceCodes/radarProcessor.hpp 
+INFO: [HLS 200-10] Adding design file '../SourceCodes/radarProcessor.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../OuputFiles/out_cpp.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../OuputFiles/out_cpp.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../SourceCodes/radarProcessor_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../SourceCodes/radarProcessor_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../SourceCodes/radar_inp_cpp.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../SourceCodes/radar_inp_cpp.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../SourceCodes/radar_inp_cpp_imag.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../SourceCodes/radar_inp_cpp_imag.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../SourceCodes/radar_inp_cpp_real.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../SourceCodes/radar_inp_cpp_real.txt' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -description {Radar Processor with fixed point 32,24}
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=RadarProcessor
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/Academics/BTP/Vitis/IPs/RadarProcessor2/top.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=ARK
+INFO: [HLS 200-1464] Running solution command: config_export -version=3.0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -description Radar Processor with fixed point 32,24 -display_name RadarProcessor -format ip_catalog -output E:/Academics/BTP/Vitis/IPs/RadarProcessor2/top.zip -rtl verilog -vendor ARK -version 3.0 
+INFO: [HLS 200-1510] Running: set_directive_top -name top top 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -description Radar Processor with fixed point 32,24 -vendor ARK -version 1.0 -display_name RadarProcessor -output E:/Academics/BTP/Vitis/IPs/RadarProcessor/top.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2020/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun May  9 00:49:09 2021...
+INFO: [HLS 200-802] Generated output file E:/Academics/BTP/Vitis/IPs/RadarProcessor/top.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 25.673 seconds; current allocated memory: 175.998 MB.

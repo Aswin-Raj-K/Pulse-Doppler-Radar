@@ -1,0 +1,10 @@
+11:26:37 **** Incremental Build of configuration Debug for project DMATest_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 63904 E:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 E:/Academics/BTP/VitisSDK/DMA_Demo/DMATest_system/Debug/system.bif
+sdcard_gen --xpfm E:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif E:/Academics/BTP/VitisSDK/DMA_Demo/DMATest_system/Debug/system.bif --bitstream E:/Academics/BTP/VitisSDK/DMA_Demo/DMATest/_ide/bitstream/design_1_wrapper.bit --elf E:/Academics/BTP/VitisSDK/DMA_Demo/DMATest/Debug/DMATest.elf,ps7_cortexa9_0
+creating BOOT.BIN using E:/Academics/BTP/VitisSDK/DMA_Demo/DMATest/_ide/bitstream/design_1_wrapper.bit
+Running D:/Vivado2020/Xilinx/Vitis/2020.2/bin/bootgen  -image E:/Academics/BTP/VitisSDK/DMA_Demo/DMATest_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+11:27:15 Build Finished (took 37s.756ms)
+

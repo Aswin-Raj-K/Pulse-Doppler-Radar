@@ -1,0 +1,16 @@
+top_mul_10s_32s_40_2_1
+top_mac_muladd_6ns_7ns_6ns_11_4_1
+top_matmul_pulseCanceler_coeff_M_real_V
+top_mul_9s_32s_40_2_1
+top_matchedFilter_matchedFilter_coeff_M_real_V
+top_matchedFilter_matchedFilter_coeff_M_imag_V
+top_fft_fft_coeff_M_real_V
+top_fft_fft_coeff_M_imag_V
+top_hamming_coeff_M_real_V
+top_real_V
+top_regslice_both
+top_regslice_both
+matmul
+matchedFilter
+fft
+top

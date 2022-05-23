@@ -1,0 +1,910 @@
+15:29:32 INFO  : Registering command handlers for Vitis TCF services
+15:29:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Academics\BTP\VitisSDK\GPIO_Controller\temp_xsdb_launch_script.tcl
+15:29:35 INFO  : XSCT server has started successfully.
+15:29:35 INFO  : Successfully done setting XSCT server connection channel  
+15:29:37 INFO  : Platform repository initialization has completed.
+15:29:39 INFO  : plnx-install-location is set to ''
+15:29:39 INFO  : Successfully done setting workspace for the tool. 
+15:29:39 INFO  : Successfully done query RDI_DATADIR 
+15:30:23 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:30:23 INFO  : Result from executing command 'getPlatforms': 
+15:30:23 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:30:24 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:30:35 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:31:55 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:31:55 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:31:55 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:32:14 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:32:14 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:32:14 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:33:31 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:33:31 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:33:31 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:35:31 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:35:31 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:35:31 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:37:03 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:37:03 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:37:03 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:39:23 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:39:24 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:39:24 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:39:40 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:39:40 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:39:40 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:41:25 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:41:25 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:41:25 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:41:50 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:41:50 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:41:50 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:42:57 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:42:57 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:42:57 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:43:31 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:43:31 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:43:31 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:43:50 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:43:50 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:43:50 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:51:28 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:51:28 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:51:28 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:53:27 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:53:27 ERROR : Failed to openhw "E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:53:27 ERROR : Failed to update application flags from BSP for 'GPIOController'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+16:03:23 INFO  : Result from executing command 'getProjects': design_1_wrapper
+16:03:23 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+16:03:23 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:08:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Academics\BTP\VitisSDK\GPIO_Controller\temp_xsdb_launch_script.tcl
+15:08:16 INFO  : XSCT server has started successfully.
+15:08:16 INFO  : Successfully done setting XSCT server connection channel  
+15:08:16 INFO  : plnx-install-location is set to ''
+15:08:16 INFO  : Successfully done setting workspace for the tool. 
+15:08:23 INFO  : Platform repository initialization has completed.
+15:08:24 INFO  : Registering command handlers for Vitis TCF services
+15:08:32 INFO  : Successfully done query RDI_DATADIR 
+15:08:42 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:09:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+15:10:48 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:15:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:15:18 INFO  : Device configured successfully with "E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit"
+15:15:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:15:43 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:15:43 INFO  : 'jtag frequency' command is executed.
+15:15:43 INFO  : Context for 'APU' is selected.
+15:15:43 INFO  : System reset is completed.
+15:15:46 INFO  : 'after 3000' command is executed.
+15:15:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:15:49 INFO  : Device configured successfully with "E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit"
+15:15:49 INFO  : Context for 'APU' is selected.
+15:15:49 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:15:49 INFO  : 'configparams force-mem-access 1' command is executed.
+15:15:49 INFO  : Context for 'APU' is selected.
+15:15:49 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:15:51 INFO  : 'ps7_init' command is executed.
+15:15:51 INFO  : 'ps7_post_config' command is executed.
+15:15:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:15:52 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:15:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:15:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}
+fpga -file E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:15:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:15:52 INFO  : 'con' command is executed.
+15:15:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:15:52 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:17:19 INFO  : Disconnected from the channel tcfchan#2.
+15:17:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:17:20 INFO  : 'fpga -state' command is executed.
+15:17:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:20 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:17:21 INFO  : 'jtag frequency' command is executed.
+15:17:21 INFO  : Context for 'APU' is selected.
+15:17:26 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:17:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:17:26 INFO  : Context for 'APU' is selected.
+15:17:26 INFO  : 'stop' command is executed.
+15:17:26 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:17:27 INFO  : 'ps7_init' command is executed.
+15:17:27 INFO  : 'ps7_post_config' command is executed.
+15:17:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:17:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:27 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:17:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:17:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:17:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:28 INFO  : 'con' command is executed.
+15:17:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:17:28 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:19:51 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:20:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+15:20:39 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:20:59 INFO  : Disconnected from the channel tcfchan#3.
+15:21:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:21:01 INFO  : 'fpga -state' command is executed.
+15:21:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:01 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:21:01 INFO  : 'jtag frequency' command is executed.
+15:21:01 INFO  : Context for 'APU' is selected.
+15:21:06 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:21:06 INFO  : 'configparams force-mem-access 1' command is executed.
+15:21:06 INFO  : Context for 'APU' is selected.
+15:21:06 INFO  : 'stop' command is executed.
+15:21:06 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:21:08 INFO  : 'ps7_init' command is executed.
+15:21:09 INFO  : 'ps7_post_config' command is executed.
+15:21:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:21:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:09 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:21:09 INFO  : 'configparams force-mem-access 0' command is executed.
+15:21:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:21:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:10 INFO  : 'con' command is executed.
+15:21:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:21:10 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:21:56 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:22:11 INFO  : Disconnected from the channel tcfchan#5.
+15:22:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:22:12 INFO  : 'fpga -state' command is executed.
+15:22:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:13 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:22:13 INFO  : 'jtag frequency' command is executed.
+15:22:13 INFO  : Context for 'APU' is selected.
+15:22:17 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:22:17 INFO  : 'configparams force-mem-access 1' command is executed.
+15:22:17 INFO  : Context for 'APU' is selected.
+15:22:18 INFO  : 'stop' command is executed.
+15:22:18 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:22:19 INFO  : 'ps7_init' command is executed.
+15:22:19 INFO  : 'ps7_post_config' command is executed.
+15:22:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:22:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:20 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:22:20 INFO  : 'configparams force-mem-access 0' command is executed.
+15:22:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:22:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:20 INFO  : 'con' command is executed.
+15:22:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:22:20 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:22:45 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:22:55 INFO  : Disconnected from the channel tcfchan#6.
+15:22:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:22:57 INFO  : 'fpga -state' command is executed.
+15:22:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:57 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:22:57 INFO  : 'jtag frequency' command is executed.
+15:22:57 INFO  : Context for 'APU' is selected.
+15:23:02 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:23:02 INFO  : 'configparams force-mem-access 1' command is executed.
+15:23:02 INFO  : Context for 'APU' is selected.
+15:23:02 INFO  : 'stop' command is executed.
+15:23:02 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:23:04 INFO  : 'ps7_init' command is executed.
+15:23:04 INFO  : 'ps7_post_config' command is executed.
+15:23:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:23:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:04 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:23:04 INFO  : 'configparams force-mem-access 0' command is executed.
+15:23:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:23:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:05 INFO  : 'con' command is executed.
+15:23:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:23:05 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:23:52 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:24:03 INFO  : Disconnected from the channel tcfchan#7.
+15:24:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:24:04 INFO  : 'fpga -state' command is executed.
+15:24:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:04 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:24:04 INFO  : 'jtag frequency' command is executed.
+15:24:05 INFO  : Context for 'APU' is selected.
+15:24:09 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:24:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:24:09 INFO  : Context for 'APU' is selected.
+15:24:09 INFO  : 'stop' command is executed.
+15:24:09 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:24:11 INFO  : 'ps7_init' command is executed.
+15:24:12 INFO  : 'ps7_post_config' command is executed.
+15:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:12 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:24:12 INFO  : 'configparams force-mem-access 0' command is executed.
+15:24:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:12 INFO  : 'con' command is executed.
+15:24:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:24:12 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:25:09 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:25:16 INFO  : Disconnected from the channel tcfchan#8.
+15:25:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:25:17 INFO  : 'fpga -state' command is executed.
+15:25:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:18 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:25:18 INFO  : 'jtag frequency' command is executed.
+15:25:18 INFO  : Context for 'APU' is selected.
+15:25:23 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:25:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:23 INFO  : Context for 'APU' is selected.
+15:25:23 INFO  : 'stop' command is executed.
+15:25:23 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:25:25 INFO  : 'ps7_init' command is executed.
+15:25:25 INFO  : 'ps7_post_config' command is executed.
+15:25:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:25:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:25 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:25 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:26 INFO  : 'con' command is executed.
+15:25:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:25:26 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:26:07 INFO  : Disconnected from the channel tcfchan#9.
+15:26:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:26:09 INFO  : 'fpga -state' command is executed.
+15:26:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:09 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:26:09 INFO  : 'jtag frequency' command is executed.
+15:26:09 INFO  : Context for 'APU' is selected.
+15:26:14 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:26:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:26:14 INFO  : Context for 'APU' is selected.
+15:26:14 INFO  : 'stop' command is executed.
+15:26:14 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:26:16 INFO  : 'ps7_init' command is executed.
+15:26:16 INFO  : 'ps7_post_config' command is executed.
+15:26:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:26:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:17 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:26:17 INFO  : 'configparams force-mem-access 0' command is executed.
+15:26:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:26:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:26:17 INFO  : 'con' command is executed.
+15:26:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:26:17 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:27:41 INFO  : Disconnected from the channel tcfchan#10.
+14:28:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Academics\BTP\VitisSDK\GPIO_Controller\temp_xsdb_launch_script.tcl
+14:28:26 INFO  : XSCT server has started successfully.
+14:28:26 INFO  : Successfully done setting XSCT server connection channel  
+14:28:26 INFO  : plnx-install-location is set to ''
+14:28:26 INFO  : Successfully done setting workspace for the tool. 
+14:28:54 INFO  : Registering command handlers for Vitis TCF services
+14:28:58 INFO  : Platform repository initialization has completed.
+14:29:32 INFO  : Successfully done query RDI_DATADIR 
+15:36:04 INFO  : Checking for BSP changes to sync application flags for project 'GPIOController'...
+15:43:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:55 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203AB90FBA' is selected.
+15:43:55 INFO  : 'jtag frequency' command is executed.
+15:43:55 INFO  : Context for 'APU' is selected.
+15:43:55 INFO  : System reset is completed.
+15:43:58 INFO  : 'after 3000' command is executed.
+15:43:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}' command is executed.
+15:44:16 INFO  : Device configured successfully with "E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit"
+15:44:16 INFO  : Context for 'APU' is selected.
+15:44:16 INFO  : Hardware design and registers information is loaded from 'E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:44:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:44:17 INFO  : Context for 'APU' is selected.
+15:44:17 INFO  : Sourcing of 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl' is done.
+15:44:21 INFO  : 'ps7_init' command is executed.
+15:44:21 INFO  : 'ps7_post_config' command is executed.
+15:44:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:21 INFO  : The application 'E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:44:22 INFO  : 'configparams force-mem-access 0' command is executed.
+15:44:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203AB90FBA" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT1-210203AB90FBA-23727093-0"}
+fpga -file E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:44:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:29 INFO  : 'con' command is executed.
+15:44:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:44:29 INFO  : Launch script is exported to file 'E:\Academics\BTP\VitisSDK\GPIO_Controller\GPIOController_system\_ide\scripts\debugger_gpiocontroller-default.tcl'
+15:45:34 INFO  : Disconnected from the channel tcfchan#1.

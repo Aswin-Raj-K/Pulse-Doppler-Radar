@@ -1,0 +1,77 @@
+timestamp=[2022-04-11 13:00:44], mode=WORKBENCH_START, duration=0:00:08.734, duration_ms=8734, data={}
+timestamp=[2022-04-11 13:00:45], mode=WORKBENCH_UI_INIT, duration=0:00:01.061, duration_ms=1061, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2022-04-11 13:01:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:15.708, duration_ms=15708, data={}
+timestamp=[2022-04-11 13:02:42], mode=APP_CREATION, duration=0:00:59.565, duration_ms=59565, data={name=DMATest, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2022-04-11 13:07:01], mode=PLATFORM_GENERATION, duration=0:01:08.844, duration_ms=68844, data={name=design_1_wrapper}
+timestamp=[2022-04-11 13:07:08], mode=BUILD, duration=0:00:06.099, duration_ms=6099, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 13:38:16], mode=BUILD, duration=0:00:05.636, duration_ms=5636, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:10:54], mode=BUILD, duration=0:00:02.771, duration_ms=2771, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:11:23], mode=BUILD, duration=0:00:04.307, duration_ms=4307, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:15:27], mode=BUILD, duration=0:00:02.679, duration_ms=2679, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:19:07], mode=BUILD, duration=0:00:01.374, duration_ms=1374, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:21:20], mode=BUILD, duration=0:00:02.147, duration_ms=2147, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:21:48], mode=BUILD, duration=0:00:02.945, duration_ms=2945, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 15:22:03], mode=BUILD, duration=0:00:03.035, duration_ms=3035, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-11 16:23:39], mode=BUILD, duration=0:00:03.445, duration_ms=3445, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:28:49], mode=WORKBENCH_START, duration=0:00:16.264, duration_ms=16264, data={}
+timestamp=[2022-04-12 15:28:50], mode=WORKBENCH_UI_INIT, duration=0:00:01.139, duration_ms=1139, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DMATest,DMATest_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-04-12 15:28:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.157, duration_ms=157, data={}
+timestamp=[2022-04-12 15:29:21], mode=BUILD, duration=0:00:01.319, duration_ms=1319, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:29:57], mode=BUILD, duration=0:00:34.965, duration_ms=34965, data={name=DMATest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:30:00], mode=BUILD, duration=0:00:01.196, duration_ms=1196, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:21:23], mode=BUILD, duration=0:00:18.235, duration_ms=18235, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:21:24], mode=BUILD, duration=0:00:00.405, duration_ms=405, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:22:30], mode=BUILD, duration=0:00:02.825, duration_ms=2825, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:22:44], mode=BUILD, duration=0:00:01.246, duration_ms=1246, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:27:41], mode=BUILD, duration=0:00:01.247, duration_ms=1247, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:28:43], mode=BUILD, duration=0:00:01.229, duration_ms=1229, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:42:15], mode=BUILD, duration=0:00:01.217, duration_ms=1217, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:42:41], mode=BUILD, duration=0:00:03.223, duration_ms=3223, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:43:39], mode=BUILD, duration=0:00:00.509, duration_ms=509, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:45:57], mode=BUILD, duration=0:00:00.778, duration_ms=778, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:46:22], mode=BUILD, duration=0:00:01.609, duration_ms=1609, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:48:01], mode=BUILD, duration=0:00:01.585, duration_ms=1585, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:50:13], mode=BUILD, duration=0:00:00.364, duration_ms=364, data={name=DMATest, configuration=Debug, clean_build=true}
+timestamp=[2022-04-12 16:50:15], mode=BUILD, duration=0:00:01.225, duration_ms=1225, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:50:52], mode=BUILD, duration=0:00:01.254, duration_ms=1254, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:51:30], mode=BUILD, duration=0:00:01.350, duration_ms=1350, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:52:44], mode=BUILD, duration=0:00:01.421, duration_ms=1421, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:53:37], mode=BUILD, duration=0:00:01.363, duration_ms=1363, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:55:33], mode=BUILD, duration=0:00:01.607, duration_ms=1607, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:57:15], mode=BUILD, duration=0:00:02.798, duration_ms=2798, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 16:59:54], mode=BUILD, duration=0:00:01.497, duration_ms=1497, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-19 16:31:35], mode=WORKBENCH_START, duration=0:00:32.326, duration_ms=32326, data={}
+timestamp=[2022-04-19 16:31:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.816, duration_ms=816, data={editors_count=7, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DMATest,DMATest_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-04-19 16:31:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.262, duration_ms=262, data={}
+timestamp=[2022-04-19 16:38:16], mode=BUILD, duration=0:00:21.442, duration_ms=21442, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-19 16:39:03], mode=BUILD, duration=0:00:46.308, duration_ms=46308, data={name=DMATest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-04-19 16:48:02], mode=BUILD, duration=0:00:05.191, duration_ms=5191, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-19 16:50:19], mode=BUILD, duration=0:00:01.653, duration_ms=1653, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-04-19 16:51:17], mode=BUILD, duration=0:00:01.234, duration_ms=1234, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 15:41:03], mode=WORKBENCH_START, duration=0:01:22.833, duration_ms=82833, data={}
+timestamp=[2022-05-02 15:41:05], mode=WORKBENCH_UI_INIT, duration=0:00:02.000, duration_ms=2000, data={editors_count=7, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DMATest,DMATest_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-05-02 15:41:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.045, duration_ms=2045, data={}
+timestamp=[2022-05-02 15:47:20], mode=BUILD, duration=0:00:47.971, duration_ms=47971, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 15:48:17], mode=BUILD, duration=0:00:55.615, duration_ms=55615, data={name=DMATest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 15:52:43], mode=BUILD, duration=0:00:04.225, duration_ms=4225, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 15:54:07], mode=BUILD, duration=0:00:03.537, duration_ms=3537, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 15:55:21], mode=BUILD, duration=0:00:05.770, duration_ms=5770, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 16:06:18], mode=BUILD, duration=0:00:03.984, duration_ms=3984, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 16:07:06], mode=BUILD, duration=0:00:03.450, duration_ms=3450, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-02 16:07:31], mode=BUILD, duration=0:00:02.251, duration_ms=2251, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:13:12], mode=BUILD, duration=0:00:02.251, duration_ms=2251, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:13:33], mode=BUILD, duration=0:00:01.180, duration_ms=1180, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:26:36], mode=BUILD, duration=0:00:01.278, duration_ms=1278, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:27:15], mode=BUILD, duration=0:00:37.776, duration_ms=37776, data={name=DMATest_system, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:37:33], mode=BUILD, duration=0:00:23.816, duration_ms=23816, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:38:53], mode=BUILD, duration=0:00:23.293, duration_ms=23293, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:45:34], mode=BUILD, duration=0:00:23.822, duration_ms=23822, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:46:45], mode=BUILD, duration=0:00:27.104, duration_ms=27104, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:47:52], mode=BUILD, duration=0:00:24.521, duration_ms=24521, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-03 11:49:16], mode=BUILD, duration=0:00:58.605, duration_ms=58605, data={name=DMATest, configuration=Debug, clean_build=false}
+timestamp=[2022-05-04 15:12:25], mode=WORKBENCH_START, duration=0:00:47.244, duration_ms=47244, data={}
+timestamp=[2022-05-04 15:12:30], mode=WORKBENCH_UI_INIT, duration=0:00:05.479, duration_ms=5479, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DMATest,DMATest_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-05-04 15:12:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.457, duration_ms=457, data={}
+timestamp=[2022-05-05 23:14:45], mode=WORKBENCH_START, duration=0:00:51.539, duration_ms=51539, data={}
+timestamp=[2022-05-05 23:14:48], mode=WORKBENCH_UI_INIT, duration=0:00:02.627, duration_ms=2627, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DMATest,DMATest_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-05-05 23:15:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.472, duration_ms=472, data={}

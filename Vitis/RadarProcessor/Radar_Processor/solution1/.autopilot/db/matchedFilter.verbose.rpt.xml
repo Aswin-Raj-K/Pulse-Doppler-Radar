@@ -1,0 +1,219 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matchedFilter'" level="0">
+<item name = "Date">Sun May  8 20:47:08 2022
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">Radar_Processor</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.098 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3820798, 3820798, 38.208 ms, 38.208 ms, 3820798, 3820798, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_90_1_VITIS_LOOP_91_2_VITIS_LOOP_92_3">3820796, 3820796, 7, 1, 1, 3820791, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 522, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">2, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 119, -</column>
+<column name="Register">-, -, 797, 160, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="matchedFilter_coeff_M_imag_V_U">matchedFilter_matchedFilter_coeff_M_imag_V, 1, 0, 0, 0, 120, 9, 1, 1080</column>
+<column name="matchedFilter_coeff_M_real_V_U">matchedFilter_matchedFilter_coeff_M_real_V, 1, 0, 0, 0, 120, 9, 1, 1080</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln90_1_fu_229_p2">+, 0, 0, 29, 22, 1</column>
+<column name="add_ln90_fu_241_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln91_1_fu_327_p2">+, 0, 0, 25, 18, 1</column>
+<column name="add_ln91_fu_287_p2">+, 0, 0, 14, 9, 1</column>
+<column name="add_ln92_fu_321_p2">+, 0, 0, 14, 9, 1</column>
+<column name="add_ln95_1_fu_371_p2">+, 0, 0, 14, 14, 14</column>
+<column name="add_ln95_fu_365_p2">+, 0, 0, 14, 14, 14</column>
+<column name="empty_26_fu_492_p2">+, 0, 0, 14, 14, 14</column>
+<column name="empty_27_fu_498_p2">+, 0, 0, 14, 14, 14</column>
+<column name="p_r_M_imag_V_fu_514_p2">+, 0, 0, 39, 32, 32</column>
+<column name="p_r_M_real_V_fu_509_p2">+, 0, 0, 39, 32, 32</column>
+<column name="ret_V_1_fu_454_p2">+, 0, 0, 47, 40, 40</column>
+<column name="ret_V_fu_440_p2">-, 0, 0, 47, 40, 40</column>
+<column name="sub_ln94_fu_386_p2">-, 0, 0, 13, 10, 10</column>
+<column name="and_ln90_fu_281_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln90_fu_235_p2">icmp, 0, 0, 14, 22, 20</column>
+<column name="icmp_ln91_fu_247_p2">icmp, 0, 0, 13, 18, 17</column>
+<column name="icmp_ln92_fu_275_p2">icmp, 0, 0, 11, 9, 9</column>
+<column name="icmp_ln94_fu_398_p2">icmp, 0, 0, 11, 10, 7</column>
+<column name="icmp_ln96_fu_315_p2">icmp, 0, 0, 11, 9, 9</column>
+<column name="or_ln91_fu_293_p2">or, 0, 0, 2, 1, 1</column>
+<column name="out_M_imag_d0">select, 0, 0, 32, 1, 32</column>
+<column name="out_M_real_d0">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln90_1_fu_261_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln90_fu_253_p3">select, 0, 0, 9, 1, 1</column>
+<column name="select_ln91_1_fu_307_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln91_2_fu_333_p3">select, 0, 0, 18, 1, 1</column>
+<column name="select_ln91_fu_299_p3">select, 0, 0, 9, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="xor_ln90_fu_269_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">20, 4, 1, 4</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter6">9, 2, 1, 2</column>
+<column name="ap_phi_mux_i_phi_fu_201_p4">9, 2, 9, 18</column>
+<column name="ap_phi_mux_k_phi_fu_179_p4">9, 2, 6, 12</column>
+<column name="i_reg_197">9, 2, 9, 18</column>
+<column name="indvar_flatten21_reg_164">9, 2, 22, 44</column>
+<column name="indvar_flatten_reg_186">9, 2, 18, 36</column>
+<column name="j_reg_208">9, 2, 9, 18</column>
+<column name="k_reg_175">9, 2, 6, 12</column>
+<column name="p_r_M_imag_V_3_fu_82">9, 2, 32, 64</column>
+<column name="p_r_M_real_V_2_fu_78">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
+<column name="i_reg_197">9, 0, 9, 0</column>
+<column name="icmp_ln90_reg_564">1, 0, 1, 0</column>
+<column name="icmp_ln94_reg_618">1, 0, 1, 0</column>
+<column name="icmp_ln96_reg_589">1, 0, 1, 0</column>
+<column name="indvar_flatten21_reg_164">22, 0, 22, 0</column>
+<column name="indvar_flatten_reg_186">18, 0, 18, 0</column>
+<column name="j_reg_208">9, 0, 9, 0</column>
+<column name="k_reg_175">6, 0, 6, 0</column>
+<column name="matchedFilter_coeff_M_imag_V_load_reg_649">9, 0, 9, 0</column>
+<column name="matchedFilter_coeff_M_real_V_load_reg_644">9, 0, 9, 0</column>
+<column name="mul_ln1192_reg_693">40, 0, 40, 0</column>
+<column name="mul_ln1193_reg_683">40, 0, 40, 0</column>
+<column name="mul_ln703_1_reg_688">40, 0, 40, 0</column>
+<column name="mul_ln703_reg_678">40, 0, 40, 0</column>
+<column name="p_r_M_imag_V_3_fu_82">32, 0, 32, 0</column>
+<column name="p_r_M_real_V_2_fu_78">32, 0, 32, 0</column>
+<column name="p_r_V_reg_698">32, 0, 32, 0</column>
+<column name="r_V_3_reg_639">32, 0, 32, 0</column>
+<column name="r_V_reg_634">32, 0, 32, 0</column>
+<column name="select_ln90_1_reg_568">6, 0, 6, 0</column>
+<column name="select_ln91_1_reg_581">9, 0, 9, 0</column>
+<column name="select_ln91_reg_574">9, 0, 9, 0</column>
+<column name="trunc_ln_reg_703">32, 0, 32, 0</column>
+<column name="zext_ln91_reg_603">6, 0, 14, 8</column>
+<column name="icmp_ln90_reg_564">64, 32, 1, 0</column>
+<column name="icmp_ln94_reg_618">64, 32, 1, 0</column>
+<column name="icmp_ln96_reg_589">64, 32, 1, 0</column>
+<column name="select_ln91_1_reg_581">64, 32, 9, 0</column>
+<column name="zext_ln91_reg_603">64, 32, 14, 8</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_739_p_din0">out, 10, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_739_p_din1">out, 32, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_739_p_dout0">in, 40, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_739_p_ce">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_748_p_din0">out, 10, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_748_p_din1">out, 32, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_748_p_dout0">in, 40, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_748_p_ce">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1138_p_din0">out, 9, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1138_p_din1">out, 32, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1138_p_dout0">in, 40, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1138_p_ce">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1142_p_din0">out, 9, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1142_p_din1">out, 32, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1142_p_dout0">in, 40, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="grp_fu_1142_p_ce">out, 1, ap_ctrl_hs, matchedFilter, return value</column>
+<column name="a_M_real_address0">out, 14, ap_memory, a_M_real, array</column>
+<column name="a_M_real_ce0">out, 1, ap_memory, a_M_real, array</column>
+<column name="a_M_real_q0">in, 32, ap_memory, a_M_real, array</column>
+<column name="a_M_imag_address0">out, 14, ap_memory, a_M_imag, array</column>
+<column name="a_M_imag_ce0">out, 1, ap_memory, a_M_imag, array</column>
+<column name="a_M_imag_q0">in, 32, ap_memory, a_M_imag, array</column>
+<column name="out_M_real_address0">out, 14, ap_memory, out_M_real, array</column>
+<column name="out_M_real_ce0">out, 1, ap_memory, out_M_real, array</column>
+<column name="out_M_real_we0">out, 1, ap_memory, out_M_real, array</column>
+<column name="out_M_real_d0">out, 32, ap_memory, out_M_real, array</column>
+<column name="out_M_imag_address0">out, 14, ap_memory, out_M_imag, array</column>
+<column name="out_M_imag_ce0">out, 1, ap_memory, out_M_imag, array</column>
+<column name="out_M_imag_we0">out, 1, ap_memory, out_M_imag, array</column>
+<column name="out_M_imag_d0">out, 32, ap_memory, out_M_imag, array</column>
+</table>
+</item>
+</section>
+</profile>

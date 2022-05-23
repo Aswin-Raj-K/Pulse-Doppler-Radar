@@ -1,0 +1,279 @@
+
+
+================================================================
+== Vitis HLS Report for 'matmul'
+================================================================
+* Date:           Sun May  8 20:46:55 2022
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        Radar_Processor
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   488288|   488288|  4.883 ms|  4.883 ms|  488288|  488288|     none|
+    +---------+---------+----------+----------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                                                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
+        |                     Loop Name                     |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- VITIS_LOOP_73_1_VITIS_LOOP_74_2_VITIS_LOOP_75_3  |   488286|   488286|         8|          1|          1|  488280|       yes|
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 8, States = { 2 3 4 5 6 7 8 9 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 10 9 
+9 --> 2 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 11 [1/1] (1.58ns)   --->   "%br_ln73 = br void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 11 'br' 'br_ln73' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 5.98>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%indvar_flatten19 = phi i19 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i19 %add_ln73_1, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 12 'phi' 'indvar_flatten19' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i12 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i12 %select_ln74_2, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 13 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%k = phi i6 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i6 %add_ln75, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge" [../SourceCodes/radarProcessor.cpp:75]   --->   Operation 14 'phi' 'k' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (2.16ns)   --->   "%add_ln73_1 = add i19 %indvar_flatten19, i19 1" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 15 'add' 'add_ln73_1' <Predicate = true> <Delay = 2.16> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (2.43ns)   --->   "%icmp_ln73 = icmp_eq  i19 %indvar_flatten19, i19 488280" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 16 'icmp' 'icmp_ln73' <Predicate = true> <Delay = 2.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (1.99ns)   --->   "%icmp_ln74 = icmp_eq  i12 %indvar_flatten, i12 1560" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 17 'icmp' 'icmp_ln74' <Predicate = (!icmp_ln73)> <Delay = 1.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node and_ln73)   --->   "%xor_ln73 = xor i1 %icmp_ln74, i1 1" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 18 'xor' 'xor_ln73' <Predicate = (!icmp_ln73)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (1.42ns)   --->   "%icmp_ln75 = icmp_eq  i6 %k, i6 40" [../SourceCodes/radarProcessor.cpp:75]   --->   Operation 19 'icmp' 'icmp_ln75' <Predicate = (!icmp_ln73)> <Delay = 1.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln73 = and i1 %icmp_ln75, i1 %xor_ln73" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 20 'and' 'and_ln73' <Predicate = (!icmp_ln73)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node select_ln74)   --->   "%or_ln74 = or i1 %and_ln73, i1 %icmp_ln74" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 21 'or' 'or_ln74' <Predicate = (!icmp_ln73)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (1.18ns) (out node of the LUT)   --->   "%select_ln74 = select i1 %or_ln74, i6 0, i6 %k" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 22 'select' 'select_ln74' <Predicate = (!icmp_ln73)> <Delay = 1.18> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln1118_1 = zext i6 %select_ln74"   --->   Operation 23 'zext' 'zext_ln1118_1' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_2 : Operation 24 [3/3] (1.05ns) (grouped into DSP with root node add_ln1118)   --->   "%mul_ln1118 = mul i11 %zext_ln1118_1, i11 39"   --->   Operation 24 'mul' 'mul_ln1118' <Predicate = (!icmp_ln73)> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 25 [1/1] (1.42ns)   --->   "%icmp_ln80 = icmp_eq  i6 %select_ln74, i6 39" [../SourceCodes/radarProcessor.cpp:80]   --->   Operation 25 'icmp' 'icmp_ln80' <Predicate = (!icmp_ln73)> <Delay = 1.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln80 = br i1 %icmp_ln80, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge, void" [../SourceCodes/radarProcessor.cpp:80]   --->   Operation 26 'br' 'br_ln80' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (1.82ns)   --->   "%add_ln75 = add i6 %select_ln74, i6 1" [../SourceCodes/radarProcessor.cpp:75]   --->   Operation 27 'add' 'add_ln75' <Predicate = (!icmp_ln73)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (1.54ns)   --->   "%add_ln74_1 = add i12 %indvar_flatten, i12 1" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 28 'add' 'add_ln74_1' <Predicate = (!icmp_ln73)> <Delay = 1.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.69ns)   --->   "%select_ln74_2 = select i1 %icmp_ln74, i12 1, i12 %add_ln74_1" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 29 'select' 'select_ln74_2' <Predicate = (!icmp_ln73)> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25"   --->   Operation 30 'br' 'br_ln0' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.05>
+ST_3 : Operation 31 [2/3] (1.05ns) (grouped into DSP with root node add_ln1118)   --->   "%mul_ln1118 = mul i11 %zext_ln1118_1, i11 39"   --->   Operation 31 'mul' 'mul_ln1118' <Predicate = (!icmp_ln73)> <Delay = 1.05> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 6.30>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%i = phi i9 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i9 %select_ln73_1, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 32 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%j = phi i6 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i6 %select_ln74_1, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 33 'phi' 'j' <Predicate = (!icmp_ln74)> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (1.82ns)   --->   "%add_ln73 = add i9 %i, i9 1" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 34 'add' 'add_ln73' <Predicate = (!icmp_ln73 & icmp_ln74)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 35 [1/1] (1.18ns)   --->   "%select_ln73 = select i1 %icmp_ln74, i6 0, i6 %j" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 35 'select' 'select_ln73' <Predicate = (!icmp_ln73)> <Delay = 1.18> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 36 [1/1] (0.96ns)   --->   "%select_ln73_1 = select i1 %icmp_ln74, i9 %add_ln73, i9 %i" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 36 'select' 'select_ln73_1' <Predicate = (!icmp_ln73)> <Delay = 0.96> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 37 [1/1] (1.82ns)   --->   "%add_ln74 = add i6 %select_ln73, i6 1" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 37 'add' 'add_ln74' <Predicate = (!icmp_ln73 & and_ln73)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 38 [1/1] (1.18ns)   --->   "%select_ln74_1 = select i1 %and_ln73, i6 %add_ln74, i6 %select_ln73" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 38 'select' 'select_ln74_1' <Predicate = (!icmp_ln73)> <Delay = 1.18> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%select_ln74_1_cast10 = zext i6 %select_ln74_1" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 39 'zext' 'select_ln74_1_cast10' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_4 : Operation 40 [1/3] (0.00ns) (grouped into DSP with root node add_ln1118)   --->   "%mul_ln1118 = mul i11 %zext_ln1118_1, i11 39"   --->   Operation 40 'mul' 'mul_ln1118' <Predicate = (!icmp_ln73)> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 41 [2/2] (2.10ns) (root node of the DSP)   --->   "%add_ln1118 = add i11 %mul_ln1118, i11 %select_ln74_1_cast10"   --->   Operation 41 'add' 'add_ln1118' <Predicate = (!icmp_ln73)> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 6.87>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i14 @_ssdm_op_BitConcatenate.i14.i9.i5, i9 %select_ln73_1, i5 0" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 42 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_6 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i9.i3, i9 %select_ln73_1, i3 0" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 43 'bitconcatenate' 'tmp_6' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln79 = zext i12 %tmp_6" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 44 'zext' 'zext_ln79' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (1.81ns)   --->   "%add_ln79 = add i14 %tmp, i14 %zext_ln79" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 45 'add' 'add_ln79' <Predicate = (!icmp_ln73)> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln1118 = zext i6 %select_ln74"   --->   Operation 46 'zext' 'zext_ln1118' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 47 [1/2] (2.10ns) (root node of the DSP)   --->   "%add_ln1118 = add i11 %mul_ln1118, i11 %select_ln74_1_cast10"   --->   Operation 47 'add' 'add_ln1118' <Predicate = (!icmp_ln73)> <Delay = 2.10> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln1118_2 = zext i11 %add_ln1118"   --->   Operation 48 'zext' 'zext_ln1118_2' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%pulseCanceler_coeff_M_real_V_addr = getelementptr i10 %pulseCanceler_coeff_M_real_V, i64 0, i64 %zext_ln1118_2"   --->   Operation 49 'getelementptr' 'pulseCanceler_coeff_M_real_V_addr' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (1.81ns)   --->   "%add_ln79_1 = add i14 %add_ln79, i14 %zext_ln1118" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 50 'add' 'add_ln79_1' <Predicate = (!icmp_ln73)> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln79_1 = zext i14 %add_ln79_1" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 51 'zext' 'zext_ln79_1' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%p_x_M_real_V = getelementptr i32 %a_M_real, i64 0, i64 %zext_ln79_1" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 52 'getelementptr' 'p_x_M_real_V' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%p_x_M_imag_V = getelementptr i32 %a_M_imag, i64 0, i64 %zext_ln79_1" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 53 'getelementptr' 'p_x_M_imag_V' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (1.42ns)   --->   "%icmp_ln77 = icmp_eq  i6 %select_ln74, i6 0" [../SourceCodes/radarProcessor.cpp:77]   --->   Operation 54 'icmp' 'icmp_ln77' <Predicate = (!icmp_ln73)> <Delay = 1.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 55 [2/2] (3.25ns)   --->   "%r_V = load i14 %p_x_M_real_V"   --->   Operation 55 'load' 'r_V' <Predicate = (!icmp_ln73)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 12520> <RAM>
+ST_5 : Operation 56 [2/2] (3.25ns)   --->   "%r_V_2 = load i14 %p_x_M_imag_V"   --->   Operation 56 'load' 'r_V_2' <Predicate = (!icmp_ln73)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 12520> <RAM>
+ST_5 : Operation 57 [2/2] (3.25ns)   --->   "%pulseCanceler_coeff_M_real_V_load = load i11 %pulseCanceler_coeff_M_real_V_addr"   --->   Operation 57 'load' 'pulseCanceler_coeff_M_real_V_load' <Predicate = (!icmp_ln73)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1560> <ROM>
+
+State 6 <SV = 5> <Delay = 3.25>
+ST_6 : Operation 58 [1/2] (3.25ns)   --->   "%r_V = load i14 %p_x_M_real_V"   --->   Operation 58 'load' 'r_V' <Predicate = (!icmp_ln73)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 12520> <RAM>
+ST_6 : Operation 59 [1/2] (3.25ns)   --->   "%r_V_2 = load i14 %p_x_M_imag_V"   --->   Operation 59 'load' 'r_V_2' <Predicate = (!icmp_ln73)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 12520> <RAM>
+ST_6 : Operation 60 [1/2] (3.25ns)   --->   "%pulseCanceler_coeff_M_real_V_load = load i11 %pulseCanceler_coeff_M_real_V_addr"   --->   Operation 60 'load' 'pulseCanceler_coeff_M_real_V_load' <Predicate = (!icmp_ln73)> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 10> <Depth = 1560> <ROM>
+
+State 7 <SV = 6> <Delay = 6.91>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i10 %pulseCanceler_coeff_M_real_V_load"   --->   Operation 61 'sext' 'sext_ln1118' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%sext_ln1118_2 = sext i32 %r_V"   --->   Operation 62 'sext' 'sext_ln1118_2' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_7 : Operation 63 [2/2] (6.91ns)   --->   "%mul_ln1115 = mul i40 %sext_ln1118, i40 %sext_ln1118_2"   --->   Operation 63 'mul' 'mul_ln1115' <Predicate = (!icmp_ln73)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%sext_ln1118_3 = sext i32 %r_V_2"   --->   Operation 64 'sext' 'sext_ln1118_3' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_7 : Operation 65 [2/2] (6.91ns)   --->   "%mul_ln1115_2 = mul i40 %sext_ln1118, i40 %sext_ln1118_3"   --->   Operation 65 'mul' 'mul_ln1115_2' <Predicate = (!icmp_ln73)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.91>
+ST_8 : Operation 66 [1/1] (0.00ns)   --->   "%sum_M_imag_V = phi i32 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i32 %sum_M_imag_V_2, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge"   --->   Operation 66 'phi' 'sum_M_imag_V' <Predicate = (!icmp_ln77)> <Delay = 0.00>
+ST_8 : Operation 67 [1/1] (0.00ns)   --->   "%sum_M_real_V = phi i32 0, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit, i32 %sum_M_real_V_2, void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge"   --->   Operation 67 'phi' 'sum_M_real_V' <Predicate = (!icmp_ln77)> <Delay = 0.00>
+ST_8 : Operation 68 [1/1] (0.00ns)   --->   "%br_ln73 = br i1 %icmp_ln73, void %.split3, void" [../SourceCodes/radarProcessor.cpp:73]   --->   Operation 68 'br' 'br_ln73' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 69 [1/2] (6.91ns)   --->   "%mul_ln1115 = mul i40 %sext_ln1118, i40 %sext_ln1118_2"   --->   Operation 69 'mul' 'mul_ln1115' <Predicate = (!icmp_ln73)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 70 [1/2] (6.91ns)   --->   "%mul_ln1115_2 = mul i40 %sext_ln1118, i40 %sext_ln1118_3"   --->   Operation 70 'mul' 'mul_ln1115_2' <Predicate = (!icmp_ln73)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.80>
+ST_9 : Operation 71 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_73_1_VITIS_LOOP_74_2_VITIS_LOOP_75_3_str"   --->   Operation 71 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 72 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 488280, i64 488280, i64 488280"   --->   Operation 72 'speclooptripcount' 'empty' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 73 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_74_2_VITIS_LOOP_75_3_str"   --->   Operation 73 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 74 [1/1] (0.00ns)   --->   "%select_ln74_1_cast = zext i6 %select_ln74_1" [../SourceCodes/radarProcessor.cpp:74]   --->   Operation 74 'zext' 'select_ln74_1_cast' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 75 [1/1] (1.81ns)   --->   "%empty_25 = add i14 %add_ln79, i14 %select_ln74_1_cast" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 75 'add' 'empty_25' <Predicate = (!icmp_ln73)> <Delay = 1.81> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 76 [1/1] (0.00ns)   --->   "%p_cast = zext i14 %empty_25" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 76 'zext' 'p_cast' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 77 [1/1] (0.00ns)   --->   "%out_M_real_addr = getelementptr i32 %out_M_real, i64 0, i64 %p_cast" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 77 'getelementptr' 'out_M_real_addr' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 78 [1/1] (0.00ns)   --->   "%out_M_imag_addr = getelementptr i32 %out_M_imag, i64 0, i64 %p_cast" [../SourceCodes/radarProcessor.cpp:79]   --->   Operation 78 'getelementptr' 'out_M_imag_addr' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 79 [1/1] (0.00ns)   --->   "%specpipeline_ln72 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_6" [../SourceCodes/radarProcessor.cpp:72]   --->   Operation 79 'specpipeline' 'specpipeline_ln72' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 80 [1/1] (0.00ns)   --->   "%specloopname_ln72 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [../SourceCodes/radarProcessor.cpp:72]   --->   Operation 80 'specloopname' 'specloopname_ln72' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node sum_M_imag_V_2)   --->   "%sum_M_imag_V_1 = select i1 %icmp_ln77, i32 0, i32 %sum_M_imag_V" [../SourceCodes/radarProcessor.cpp:77]   --->   Operation 81 'select' 'sum_M_imag_V_1' <Predicate = (!icmp_ln73)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node sum_M_real_V_2)   --->   "%sum_M_real_V_1 = select i1 %icmp_ln77, i32 0, i32 %sum_M_real_V" [../SourceCodes/radarProcessor.cpp:77]   --->   Operation 82 'select' 'sum_M_real_V_1' <Predicate = (!icmp_ln73)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node sum_M_real_V_2)   --->   "%p_r_V = partselect i32 @_ssdm_op_PartSelect.i32.i40.i32.i32, i40 %mul_ln1115, i32 8, i32 39"   --->   Operation 83 'partselect' 'p_r_V' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node sum_M_imag_V_2)   --->   "%trunc_ln = partselect i32 @_ssdm_op_PartSelect.i32.i40.i32.i32, i40 %mul_ln1115_2, i32 8, i32 39"   --->   Operation 84 'partselect' 'trunc_ln' <Predicate = (!icmp_ln73)> <Delay = 0.00>
+ST_9 : Operation 85 [1/1] (2.55ns) (out node of the LUT)   --->   "%sum_M_real_V_2 = add i32 %p_r_V, i32 %sum_M_real_V_1"   --->   Operation 85 'add' 'sum_M_real_V_2' <Predicate = (!icmp_ln73)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 86 [1/1] (2.55ns) (out node of the LUT)   --->   "%sum_M_imag_V_2 = add i32 %trunc_ln, i32 %sum_M_imag_V_1"   --->   Operation 86 'add' 'sum_M_imag_V_2' <Predicate = (!icmp_ln73)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 87 [1/1] (3.25ns)   --->   "%store_ln81 = store i32 %sum_M_real_V_2, i14 %out_M_real_addr" [../SourceCodes/radarProcessor.cpp:81]   --->   Operation 87 'store' 'store_ln81' <Predicate = (icmp_ln80)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 12520> <RAM>
+ST_9 : Operation 88 [1/1] (3.25ns)   --->   "%store_ln81 = store i32 %sum_M_imag_V_2, i14 %out_M_imag_addr" [../SourceCodes/radarProcessor.cpp:81]   --->   Operation 88 'store' 'store_ln81' <Predicate = (icmp_ln80)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 12520> <RAM>
+ST_9 : Operation 89 [1/1] (0.00ns)   --->   "%br_ln81 = br void %_ZN8ap_fixedILi32ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit25.split._crit_edge" [../SourceCodes/radarProcessor.cpp:81]   --->   Operation 89 'br' 'br_ln81' <Predicate = (icmp_ln80)> <Delay = 0.00>
+
+State 10 <SV = 8> <Delay = 0.00>
+ST_10 : Operation 90 [1/1] (0.00ns)   --->   "%ret_ln85 = ret" [../SourceCodes/radarProcessor.cpp:85]   --->   Operation 90 'ret' 'ret_ln85' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvar_flatten19', ../SourceCodes/radarProcessor.cpp:73) with incoming values : ('add_ln73_1', ../SourceCodes/radarProcessor.cpp:73) [9]  (1.59 ns)
+
+ <State 2>: 5.98ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten', ../SourceCodes/radarProcessor.cpp:74) with incoming values : ('select_ln74_2', ../SourceCodes/radarProcessor.cpp:74) [11]  (0 ns)
+	'icmp' operation ('icmp_ln74', ../SourceCodes/radarProcessor.cpp:74) [23]  (1.99 ns)
+	'xor' operation ('xor_ln73', ../SourceCodes/radarProcessor.cpp:73) [30]  (0 ns)
+	'and' operation ('and_ln73', ../SourceCodes/radarProcessor.cpp:73) [32]  (0.978 ns)
+	'or' operation ('or_ln74', ../SourceCodes/radarProcessor.cpp:74) [35]  (0 ns)
+	'select' operation ('select_ln74', ../SourceCodes/radarProcessor.cpp:74) [36]  (1.19 ns)
+	'add' operation ('add_ln75', ../SourceCodes/radarProcessor.cpp:75) [78]  (1.83 ns)
+
+ <State 3>: 1.05ns
+The critical path consists of the following:
+	'mul' operation of DSP[47] ('mul_ln1118') [46]  (1.05 ns)
+
+ <State 4>: 6.3ns
+The critical path consists of the following:
+	'phi' operation ('j', ../SourceCodes/radarProcessor.cpp:74) with incoming values : ('select_ln74_1', ../SourceCodes/radarProcessor.cpp:74) [12]  (0 ns)
+	'select' operation ('select_ln73', ../SourceCodes/radarProcessor.cpp:73) [24]  (1.19 ns)
+	'add' operation ('add_ln74', ../SourceCodes/radarProcessor.cpp:74) [33]  (1.83 ns)
+	'select' operation ('select_ln74_1', ../SourceCodes/radarProcessor.cpp:74) [37]  (1.19 ns)
+	'add' operation of DSP[47] ('add_ln1118') [47]  (2.1 ns)
+
+ <State 5>: 6.88ns
+The critical path consists of the following:
+	'add' operation ('add_ln79', ../SourceCodes/radarProcessor.cpp:79) [29]  (1.81 ns)
+	'add' operation ('add_ln79_1', ../SourceCodes/radarProcessor.cpp:79) [50]  (1.81 ns)
+	'getelementptr' operation ('__x._M_real.V', ../SourceCodes/radarProcessor.cpp:79) [52]  (0 ns)
+	'load' operation ('r.V') on array 'a_M_real' [59]  (3.25 ns)
+
+ <State 6>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('r.V') on array 'a_M_real' [59]  (3.25 ns)
+
+ <State 7>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln1115') [64]  (6.91 ns)
+
+ <State 8>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln1115') [64]  (6.91 ns)
+
+ <State 9>: 5.81ns
+The critical path consists of the following:
+	'select' operation ('sum._M_real.V', ../SourceCodes/radarProcessor.cpp:77) [58]  (0 ns)
+	'add' operation ('sum._M_real.V') [69]  (2.55 ns)
+	'store' operation ('store_ln81', ../SourceCodes/radarProcessor.cpp:81) of variable 'sum._M_real.V' on array 'out_M_real' [74]  (3.25 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

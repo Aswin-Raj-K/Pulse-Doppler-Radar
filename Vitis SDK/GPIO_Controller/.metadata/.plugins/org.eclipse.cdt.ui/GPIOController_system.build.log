@@ -1,0 +1,11 @@
+15:19:57 **** Incremental Build of configuration Debug for project GPIOController_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 60648 E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController_system/Debug/system.bif
+sdcard_gen --xpfm E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController_system/Debug/system.bif --bitstream E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit --elf E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/Debug/GPIOController.elf,ps7_cortexa9_0
+creating BOOT.BIN using E:/Academics/BTP/VitisSDK/GPIO_Controller/GPIOController/_ide/bitstream/design_1_wrapper.bit
+Error intializing SD boot data : Software platform XML error, sdx:qemuArguments value "design_1_wrapper/qemu/qemu_args.txt" path does not exist E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/qemu/qemu_args.txt, platform path E:/Academics/BTP/VitisSDK/GPIO_Controller/design_1_wrapper/export/design_1_wrapper, sdx:configuration design_1_wrapper, sdx:image standard
+make: *** [makefile:39: package] Error 1
+
+15:20:14 Build Finished (took 17s.841ms)
+

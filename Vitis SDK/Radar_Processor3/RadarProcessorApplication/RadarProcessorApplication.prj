@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="RadarProcessorApplication" location="E:/Academics/BTP/VitisSDK/Radar_Processor3/RadarProcessorApplication" platform="E:/Academics/BTP/VitisSDK/Radar_Processor3/RadarProcessor_HW/export/RadarProcessor_HW/RadarProcessor_HW.xpfm" platformUID="xilinx:zc702::0.0(custom)" systemProject="RadarProcessorApplication_system" sysConfig="RadarProcessor_HW" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="0985d26e05cc1e1d3cf922cca3666686">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.140980615">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1851333877" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

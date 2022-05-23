@@ -1,0 +1,139 @@
+11:48:18 **** Incremental Build of configuration Debug for project DMATest ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xilffs_v4_4/src/ffunicode.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_g.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_intr.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_selftest.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_5/src/xadcps_sinit.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_endpoint.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_g.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_hw.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_intr.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/usbps_v2_6/src/xusbps_sinit.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_g.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_hw.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_intr.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_options.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_selftest.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/uartps_v3_10/src/xuartps_sinit.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_g.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_options.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_selftest.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.c"
+'Finished building: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/ttcps_v3_12/src/xttcps_sinit.c'
+' '
+'Building file: ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Academics/BTP/VitisSDK/DMA_Demo/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.d" -MT"src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.o" -o "src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.o" "../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.c"
+In file included from ../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.c:8:
+../src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_timer_hw.h:57:10: fatal error: xintc_l.h: No such file or directory
+   57 | #include "xintc_l.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/subdir.mk:48: src/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libsrc/standalone_v7_3/src/profile/_profile_clean.o] Error 1
+make: *** [makefile:137: all] Error 2
+
+11:49:16 Build Finished (took 58s.197ms)
+

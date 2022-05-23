@@ -1,0 +1,66 @@
+timestamp=[2022-04-06 15:29:31], mode=WORKBENCH_START, duration=0:00:06.315, duration_ms=6315, data={}
+timestamp=[2022-04-06 15:29:31], mode=WORKBENCH_UI_INIT, duration=0:00:00.628, duration_ms=628, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2022-04-06 15:29:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.432, duration_ms=4432, data={}
+timestamp=[2022-04-06 15:30:35], mode=APP_CREATION, duration=0:00:31.341, duration_ms=31341, data={name=GPIOController, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2022-04-06 15:31:55], mode=PLATFORM_GENERATION, duration=0:00:12.123, duration_ms=12123, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:31:55], mode=BUILD, duration=0:00:00.712, duration_ms=712, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:32:14], mode=PLATFORM_GENERATION, duration=0:00:05.730, duration_ms=5730, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:32:14], mode=BUILD, duration=0:00:00.628, duration_ms=628, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:33:31], mode=PLATFORM_GENERATION, duration=0:00:05.608, duration_ms=5608, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:33:31], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:33:31], mode=BUILD, duration=0:00:00.449, duration_ms=449, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:35:31], mode=PLATFORM_GENERATION, duration=0:00:07.487, duration_ms=7487, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:35:31], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:35:32], mode=BUILD, duration=0:00:00.523, duration_ms=523, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:37:03], mode=PLATFORM_GENERATION, duration=0:00:05.162, duration_ms=5162, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:37:03], mode=BUILD, duration=0:00:00.211, duration_ms=211, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:37:03], mode=BUILD, duration=0:00:00.382, duration_ms=382, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:39:23], mode=PLATFORM_GENERATION, duration=0:00:05.421, duration_ms=5421, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:39:23], mode=BUILD, duration=0:00:00.283, duration_ms=283, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:39:24], mode=BUILD, duration=0:00:00.534, duration_ms=534, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:39:40], mode=PLATFORM_GENERATION, duration=0:00:05.915, duration_ms=5915, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:39:40], mode=BUILD, duration=0:00:00.494, duration_ms=494, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:41:25], mode=PLATFORM_GENERATION, duration=0:00:06.607, duration_ms=6607, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:41:26], mode=BUILD, duration=0:00:00.481, duration_ms=481, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:41:50], mode=PLATFORM_GENERATION, duration=0:00:04.745, duration_ms=4745, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:41:50], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:42:57], mode=PLATFORM_GENERATION, duration=0:00:05.547, duration_ms=5547, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:42:57], mode=BUILD, duration=0:00:00.538, duration_ms=538, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:43:31], mode=PLATFORM_GENERATION, duration=0:00:07.262, duration_ms=7262, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:43:31], mode=BUILD, duration=0:00:00.347, duration_ms=347, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:43:32], mode=BUILD, duration=0:00:00.471, duration_ms=471, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:43:50], mode=PLATFORM_GENERATION, duration=0:00:05.438, duration_ms=5438, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:43:51], mode=BUILD, duration=0:00:00.872, duration_ms=872, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:50:56], mode=BUILD, duration=0:00:00.366, duration_ms=366, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:51:13], mode=PLATFORM_GENERATION, duration=0:00:06.284, duration_ms=6284, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:51:13], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:51:28], mode=PLATFORM_GENERATION, duration=0:00:08.042, duration_ms=8042, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:51:29], mode=BUILD, duration=0:00:01.036, duration_ms=1036, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 15:53:11], mode=PLATFORM_GENERATION, duration=0:00:04.855, duration_ms=4855, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:53:12], mode=BUILD, duration=0:00:00.293, duration_ms=293, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:53:27], mode=PLATFORM_GENERATION, duration=0:00:10.243, duration_ms=10243, data={name=design_1_wrapper}
+timestamp=[2022-04-06 15:53:27], mode=BUILD, duration=0:00:00.294, duration_ms=294, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 15:53:29], mode=BUILD, duration=0:00:01.730, duration_ms=1730, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-06 16:02:49], mode=PLATFORM_GENERATION, duration=0:00:04.785, duration_ms=4785, data={name=design_1_wrapper}
+timestamp=[2022-04-06 16:02:49], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-06 16:03:23], mode=PLATFORM_GENERATION, duration=0:00:22.618, duration_ms=22618, data={name=design_1_wrapper}
+timestamp=[2022-04-06 16:03:33], mode=BUILD, duration=0:00:04.242, duration_ms=4242, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:08:20], mode=WORKBENCH_START, duration=0:00:32.018, duration_ms=32018, data={}
+timestamp=[2022-04-12 15:08:22], mode=WORKBENCH_UI_INIT, duration=0:00:02.481, duration_ms=2481, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GPIOController,GPIOController_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-04-12 15:08:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.358, duration_ms=358, data={}
+timestamp=[2022-04-12 15:08:42], mode=BUILD, duration=0:00:02.626, duration_ms=2626, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-12 15:08:57], mode=BUILD, duration=0:00:09.612, duration_ms=9612, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:09:33], mode=BUILD, duration=0:00:34.460, duration_ms=34460, data={name=GPIOController_system, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:10:52], mode=BUILD, duration=0:00:04.189, duration_ms=4189, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:19:56], mode=BUILD, duration=0:00:04.765, duration_ms=4765, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:20:14], mode=BUILD, duration=0:00:17.855, duration_ms=17855, data={name=GPIOController_system, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:20:41], mode=BUILD, duration=0:00:01.243, duration_ms=1243, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:22:02], mode=BUILD, duration=0:00:05.660, duration_ms=5660, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:22:48], mode=BUILD, duration=0:00:03.622, duration_ms=3622, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:23:55], mode=BUILD, duration=0:00:03.190, duration_ms=3190, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-12 15:25:12], mode=BUILD, duration=0:00:03.359, duration_ms=3359, data={name=GPIOController, configuration=Debug, clean_build=false}
+timestamp=[2022-04-19 14:28:41], mode=WORKBENCH_START, duration=0:01:07.451, duration_ms=67451, data={}
+timestamp=[2022-04-19 14:28:45], mode=WORKBENCH_UI_INIT, duration=0:00:03.945, duration_ms=3945, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GPIOController,GPIOController_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2022-04-19 14:28:58], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.742, duration_ms=4742, data={}
+timestamp=[2022-04-19 15:36:03], mode=BUILD, duration=0:00:04.243, duration_ms=4243, data={name=GPIOController, configuration=Debug, clean_build=true}
+timestamp=[2022-04-19 15:36:50], mode=BUILD, duration=0:00:27.043, duration_ms=27043, data={name=GPIOController, configuration=Debug, clean_build=false}

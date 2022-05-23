@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:heap-size=409600
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.RadarProcessorApplication\:stack-size=409600
+eclipse.preferences.version=1

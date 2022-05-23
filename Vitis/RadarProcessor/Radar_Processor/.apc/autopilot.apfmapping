@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="radarProcessor.hpp" path="E:\Academics\BTP\Vitis\SourceCodes\radarProcessor.hpp"/>
+    <originFiles name="radarProcessor.cpp" path="E:\Academics\BTP\Vitis\SourceCodes\radarProcessor.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="radar_inp_cpp_real.txt" path="E:\Academics\BTP\Vitis\SourceCodes\radar_inp_cpp_real.txt"/>
+    <originFiles name="radar_inp_cpp_imag.txt" path="E:\Academics\BTP\Vitis\SourceCodes\radar_inp_cpp_imag.txt"/>
+    <originFiles name="radar_inp_cpp.txt" path="E:\Academics\BTP\Vitis\SourceCodes\radar_inp_cpp.txt"/>
+    <originFiles name="radarProcessor_tb.cpp" path="E:\Academics\BTP\Vitis\SourceCodes\radarProcessor_tb.cpp"/>
+    <originFiles name="out_cpp.txt" path="E:\Academics\BTP\Vitis\OuputFiles\out_cpp.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

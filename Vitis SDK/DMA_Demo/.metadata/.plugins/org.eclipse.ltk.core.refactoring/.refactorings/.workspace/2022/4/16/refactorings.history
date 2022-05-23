@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;DMATest/src/dmaTest.c&apos;" deleteContents="false" description="Delete resource &apos;DMATest/src/dmaTest.c&apos;" element1="/DMATest/src/dmaTest.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1649662506099"/>&#x0A;<refactoring comment="Delete resource &apos;DMATest/src/pulseCancelerInput.txt&apos;" deleteContents="false" description="Delete resource &apos;DMATest/src/pulseCancelerInput.txt&apos;" element1="/DMATest/src/pulseCancelerInput.txt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1649762387449"/>
+</session>

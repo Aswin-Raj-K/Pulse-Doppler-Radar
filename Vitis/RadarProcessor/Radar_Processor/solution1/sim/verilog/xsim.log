@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  8 21:09:16 2022
+# Process ID: 9792
+# Current directory: E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/top/xsim_script.tcl}
+# Log file: E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor/solution1/sim/verilog/xsim.log
+# Journal file: E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/top/xsim_script.tcl
+# xsim {top} -autoloadwcfg -tclbatch {top.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "47094615000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 47094655 ns : File "E:/Academics/BTP/Vitis/RadarProcessor/Radar_Processor/solution1/sim/verilog/top.autotb.v" Line 198
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:02:59 . Memory (MB): peak = 917.371 ; gain = 0.055
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun May  8 21:12:19 2022...

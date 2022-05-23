@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="GPIOController_system-bitFile" value="${project_loc:GPIOController}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="GPIOController_system-bmmFile" value=""/>
+	<item key="GPIOController_system-target" value="Local"/>
+	<item key="GPIOController_system-device" value="Auto Detect"/>
+	<item key="GPIOController_system-partial_bit" value="false"/>
+	<item key="GPIOController_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="GPIOController_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent JTAG-SMT1 210203AB90FBA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-JTAG-SMT1-210203AB90FBA-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-JTAG-SMT1-210203AB90FBA-23727093-0&quot;}}]}"/>
+</section>
