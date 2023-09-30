@@ -27,8 +27,7 @@ This project includes the implementation of various algorithms, including:
 
 ## Simulation and Verification
 
-The FPGA simulation results are compared with the reference results obtained in MATLAB for verification.
-
+The MATLAB simulation of the radar model has been successfully completed, including the successful extraction of target parameters that match the actual target parameters. The entire radar signal processor has been implemented and its functionality validated by comparing it with a MATLAB reference.
 
 # FPGA Radar Signal Processor
 
