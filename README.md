@@ -1,33 +1,4 @@
-# Pulse-Doppler-Radar
-![alt text](BD.png)
-![alt text](VivadoBlockDiagram.png)
 
-# FPGA Radar Signal Processor
-
-## Introduction
-
-FPGA (Field-Programmable Gate Array) is extensively used for high computing applications. It provides us with the flexibility of massive parallel data processing, better performance, efficiency, and faster prototyping. FPGA can be configured to run several digital signal processing algorithms within a short period. When compared to equivalent discrete circuits, FPGA occupies less space. These capabilities of FPGA make it the perfect platform for the implementation of a radar signal processor.
-
-Traditional radar signal processors often suffer from slow processing and low resolution, limiting their effectiveness. However, the implementation of a radar signal processor on an FPGA has increased the computation speed while improving the accuracy and precision of the results.
-
-## Signal Processing on FPGA
-
-The signal processing part is designed to be implemented on an FPGA (ZC702) board. It is designed to produce pulses with monotonous frequency as well as chirp. The required RF pulse is generated at the baseband, which will be upconverted to X-band on the SDR (Software-Defined Radio) and transmitted.
-
-The FPGA is programmed to store the sampled data coming from the SDR in the form of a data matrix. The data stored in the data matrix is used to extract the Doppler and range information. Before its implementation onto an actual FPGA board, the radar is simulated using MATLAB to find the best parameters required for the radar to operate.
-
-## Implemented Algorithms
-
-This project includes the implementation of various algorithms, including:
-
-- Hamming window
-- FFT (Fast Fourier Transform) algorithm
-- Double delay-line canceler
-- Matched filtering
-
-## Simulation and Verification
-
-The MATLAB simulation of the radar model has been successfully completed, including the successful extraction of target parameters that match the actual target parameters. The entire radar signal processor has been implemented and its functionality validated by comparing it with a MATLAB reference.
 
 # FPGA Radar Signal Processor
 
@@ -39,7 +10,21 @@ This project focuses on implementing a radar signal processor on an FPGA board. 
 
 ## Signal Processing on FPGA
 
-The FPGA-based signal processing includes several key steps and algorithms:
+The signal processing part is designed to be implemented on an FPGA (ZC702) board. It is designed to produce pulses with monotonous frequency as well as chirp. The required RF pulse is generated at the baseband, which will be upconverted to X-band on the SDR (Software-Defined Radio) and transmitted.
+
+The FPGA is programmed to store the sampled data coming from the SDR in the form of a data matrix. The data stored in the data matrix is used to extract the Doppler and range information. Before its implementation onto an actual FPGA board, the radar is simulated using MATLAB to find the best parameters required for the radar to operate.
+
+![alt text](BD.png)
+![alt text](VivadoBlockDiagram.png)
+
+## Implemented Algorithms
+
+This project includes the implementation of various algorithms, including:
+
+- Hamming window
+- FFT (Fast Fourier Transform) algorithm
+- Double delay-line canceler
+- Matched filtering
 
 ### Double Delay-Line Canceler
 
@@ -65,4 +50,10 @@ The FPGA design is simulated using Vivado. The simulation verifies the functiona
 
 Our attention turns to the hardware configuration and programming of the processing system. The Zynq-7000 devices feature dual-core ARM Cortex-A9 processors, with the sole purpose of facilitating data transfer from the SD card to the FPGA module. Notably, in consideration of the substantial data involved, both stack and heap memory allocations in Vitis SDK were manually adjusted to around 100KB.
 DMA (Direct Memory Access) is used for data transfer between the processing system and programmable logic. Vitis SDK is used to write C/C++ instructions for the processor. Data is read from and written to the SD card using the FatFs module. Interrupts are employed to manage data transfer between the processing system and programmable logic.
+
+## Simulation and Verification
+
+The MATLAB simulation of the radar model has been successfully completed, including the successful extraction of target parameters that match the actual target parameters. The entire radar signal processor has been implemented and its functionality validated by comparing it with a MATLAB reference.
+
+
 
