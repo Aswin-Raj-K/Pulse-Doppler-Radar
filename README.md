@@ -46,7 +46,7 @@ A 32-point FFT is performed on the windowed data along the slow time samples. FF
 
 The FPGA design is simulated using Vivado. The simulation verifies the functionality of the designed radar processor IP block. Data output is observed when both 'data OUT TVALID' and 'data OUT TREADY' are high.
 
-## Micro Processor
+## Microprocessor
 
 Our attention turns to the hardware configuration and programming of the processing system. The Zynq-7000 devices feature dual-core ARM Cortex-A9 processors, with the sole purpose of facilitating data transfer from the SD card to the FPGA module. Notably, in consideration of the substantial data involved, both stack and heap memory allocations in Vitis SDK were manually adjusted to around 100KB.
 DMA (Direct Memory Access) is used for data transfer between the processing system and programmable logic. Vitis SDK is used to write C/C++ instructions for the processor. Data is read from and written to the SD card using the FatFs module. Interrupts are employed to manage data transfer between the processing system and programmable logic.
