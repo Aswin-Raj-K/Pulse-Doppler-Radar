@@ -30,27 +30,47 @@ This project includes the implementation of various algorithms, including:
 The FPGA simulation results are compared with the reference results obtained in MATLAB for verification.
 
 
-## Simulating the Radar Using MATLAB
+# FPGA Radar Signal Processor
 
-Before implementing the radar onto an actual FPGA, we need to find the right parameters to ensure it is working as expected. A MATLAB simulation of the radar model is done to finalize the required parameters that meet our needs.
+## Introduction
 
-## Implementing the Transmitter on the FPGA
+FPGAs (Field-Programmable Gate Arrays) are used extensively for high-computing applications due to their flexibility, parallel processing capabilities, efficiency, and rapid prototyping. They excel in running digital signal processing (DSP) algorithms quickly. In the context of radar signal processing, FPGA implementations have significantly improved computation speed, accuracy, and precision compared to traditional methods.
 
-1. Chirp signal generator is to be implemented on the FPGA in the digital domain.
-2. The generated digital signal needs to be sent to the SDR for transmitting it through the antenna.
+This project focuses on implementing a radar signal processor on an FPGA board. The signal processing component is designed to generate RF pulses, perform chirp signal generation, and process received data. Prior to hardware implementation, the radar system is simulated in MATLAB to determine the required parameters.
 
-## Ensuring That the Chirp Pulses Transmitted From the FPGA Are as Expected
+## Signal Processing on FPGA
 
-This can be done using another receiver and observing the transmitted signal transmitted from the FPGA.
+The FPGA-based signal processing includes several key steps and algorithms:
 
-## Implementing the Receiver on the FPGA
+### Double Delay-Line Canceler
 
-1. Storing the echo data received by the SDR onto the memory block of FPGA.
-2. Processing the digitized data on the FPGA itself.
-3. Blocks for Hamming window, 3-pulse canceler, Matched filtering, Threshold detection, and FFT are to be designed for processing the data.
+The data matrix is multiplied by a coefficient matrix using the Xilinx Vitis tool. The data matrix has dimensions of 313 x 40, while the coefficient matrix is 40 x 39. This matrix multiplication results in a 313 x 39 output matrix. The algorithm is implemented in C++ and converted to Verilog for FPGA deployment.
 
-## Exporting the Processed Data for Visualization
+### Matched Filtering
 
-1. Export the final processed data from the FPGA to MATLAB for easy visualization.
-2. Plotting the result in MATLAB to ensure that the radar is working as expected.
+After clutter cancellation, matched filtering is applied to improve the signal-to-noise ratio. This involves convolution with a time-delayed chirp signal. The filter coefficients are generated in MATLAB and stored as an array. Convolution is performed on the data matrix along the fast time samples.
+
+### Hamming Window
+
+To reduce spectral leakage in the FFT, a Hamming window is applied. The Hamming window coefficients are generated in MATLAB and multiplied with the data in the data matrix along the slow time samples.
+
+### Fast Fourier Transform (FFT)
+
+A 32-point FFT is performed on the windowed data along the slow time samples. FFT results are obtained through matrix multiplication.
+
+## Vivado Simulation
+
+The FPGA design is simulated using Vivado. The simulation verifies the functionality of the designed radar processor IP block. Data output is observed when both 'data OUT TVALID' and 'data OUT TREADY' are high.
+
+## Micro Processor
+
+This chapter discusses the hardware configuration and programming of the processing system. The Zynq-7000 device features dual-core ARM Cortex-A9 processors used for data transfer from the SD card to the FPGA module.
+
+### Hardware Configuration
+
+The radar processing module is exported to Vivado, and DMA (Direct Memory Access) is used for data transfer between the processing system and programmable logic.
+
+### Programming the Processor
+
+Vitis SDK is used to write C/C++ instructions for the processor. Data is read from and written to the SD card using the FatFs module. Interrupts are employed to manage data transfer between the processing system and programmable logic.
 
