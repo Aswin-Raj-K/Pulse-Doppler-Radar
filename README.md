@@ -2,6 +2,34 @@
 ![alt text](BD.png)
 ![alt text](VivadoBlockDiagram.png)
 
+# FPGA Radar Signal Processor
+
+## Introduction
+
+FPGA (Field-Programmable Gate Array) is extensively used for high computing applications. It provides us with the flexibility of massive parallel data processing, better performance, efficiency, and faster prototyping. FPGA can be configured to run several digital signal processing algorithms within a short period. When compared to equivalent discrete circuits, FPGA occupies less space. These capabilities of FPGA make it the perfect platform for the implementation of a radar signal processor.
+
+Traditional radar signal processors often suffer from slow processing and low resolution, limiting their effectiveness. However, the implementation of a radar signal processor on an FPGA has increased the computation speed while improving the accuracy and precision of the results.
+
+## Signal Processing on FPGA
+
+The signal processing part is designed to be implemented on an FPGA (ZC702) board. It is designed to produce pulses with monotonous frequency as well as chirp. The required RF pulse is generated at the baseband, which will be upconverted to X-band on the SDR (Software-Defined Radio) and transmitted.
+
+The FPGA is programmed to store the sampled data coming from the SDR in the form of a data matrix. The data stored in the data matrix is used to extract the Doppler and range information. Before its implementation onto an actual FPGA board, the radar is simulated using MATLAB to find the best parameters required for the radar to operate.
+
+## Implemented Algorithms
+
+This project includes the implementation of various algorithms, including:
+
+- Hamming window
+- FFT (Fast Fourier Transform) algorithm
+- Double delay-line canceler
+- Matched filtering
+
+## Simulation and Verification
+
+The FPGA simulation results are compared with the reference results obtained in MATLAB for verification.
+
+
 ## Simulating the Radar Using MATLAB
 
 Before implementing the radar onto an actual FPGA, we need to find the right parameters to ensure it is working as expected. A MATLAB simulation of the radar model is done to finalize the required parameters that meet our needs.
