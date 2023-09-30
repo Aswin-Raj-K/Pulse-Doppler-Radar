@@ -42,10 +42,6 @@ To reduce spectral leakage in the FFT, a Hamming window is applied. The Hamming 
 
 A 32-point FFT is performed on the windowed data along the slow time samples. FFT results are obtained through matrix multiplication.
 
-## Vivado Simulation
-
-The FPGA design is simulated using Vivado. The simulation verifies the functionality of the designed radar processor IP block. Data output is observed when both 'data OUT TVALID' and 'data OUT TREADY' are high.
-
 ## Microprocessor
 
 Our attention turns to the hardware configuration and programming of the processing system. The Zynq-7000 devices feature dual-core ARM Cortex-A9 processors, with the sole purpose of facilitating data transfer from the SD card to the FPGA module. Notably, in consideration of the substantial data involved, both stack and heap memory allocations in Vitis SDK were manually adjusted to around 100KB.
